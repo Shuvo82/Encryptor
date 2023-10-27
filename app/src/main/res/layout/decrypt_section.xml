@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:paddingTop="20dp"
+    android:fitsSystemWindows="true"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:background="@color/background">
+
+
+        <EditText
+            android:id="@+id/encrypted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tap to enter text"
+            android:inputType="text"
+            android:textColor="#000000"
+
+            android:backgroundTint="#F44336"
+            android:textIsSelectable="true"
+            android:textSize="22dp"
+            android:textStyle="italic" />
+    </ScrollView>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"></Space>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:background="@color/background">
+        <TextView
+            android:id="@+id/decrypted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Decrypted text will show here"
+            android:textColor="#4CB104"
+            android:layout_marginTop="20dp"
+            android:textSize="22dp"
+            android:backgroundTint="#72E80C"
+            android:textColorHighlight="@color/Decrypt_background"
+            android:textStyle="italic"
+            android:textIsSelectable="true"
+            android:textAlignment="textStart"/>
+
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_encrypt"
+            android:layout_marginTop="20dp"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:textAllCaps="false"
+            android:text="Decrypt"
+            android:textSize="15sp"
+
+            android:textColor="#FFFFFF"
+            android:background="@color/Decrypt_background"/>
+
+        <Button
+            android:id="@+id/page2"
+            android:layout_width="160dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/encrypt_background"
+            android:text="Try encrypting!"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

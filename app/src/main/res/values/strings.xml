@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Encrypton</string>
+    <string name="text">Encryted text will show here</string>
+    <string name="alertdialog_title">Encrypton</string>
+    <string name="alertdialog">Do you wat to exit?</string>
+
+</resources>
